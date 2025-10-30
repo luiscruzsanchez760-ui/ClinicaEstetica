@@ -68,9 +68,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Formularios\Default.aspx" />
+    <Content Include="Formularios\Imagenes\atencion.png" />
+    <Content Include="Formularios\Imagenes\candles.png" />
+    <Content Include="Formularios\Imagenes\consulta.jpg" />
+    <Content Include="Formularios\Imagenes\dermapen.png" />
     <Content Include="Formularios\Imagenes\doctor.jpg" />
+    <Content Include="Formularios\Imagenes\especialista.png" />
     <Content Include="Formularios\Imagenes\estetica.png" />
+    <Content Include="Formularios\Imagenes\fondo.png" />
+    <Content Include="Formularios\Imagenes\higiene.png" />
+    <Content Include="Formularios\Imagenes\laseres.png" />
+    <Content Include="Formularios\Imagenes\limpieza_facial.jpg" />
+    <Content Include="Formularios\Imagenes\lipo_enzimas.png" />
     <Content Include="Formularios\Imagenes\logo.png" />
+    <Content Include="Formularios\Imagenes\peeling_quimico.jpg" />
+    <Content Include="Formularios\Imagenes\puntualidad.png" />
+    <Content Include="Formularios\Imagenes\rellenos_faciales.jpg" />
+    <Content Include="Formularios\Imagenes\restauramos_cabello.png" />
+    <Content Include="Formularios\Imagenes\revitalizamos_piel.png" />
+    <Content Include="Formularios\Imagenes\tecnologia.png" />
+    <Content Include="Formularios\laseres.png" />
+    <Content Include="Formularios\UserControls\Diferentes.ascx" />
+    <Content Include="Formularios\UserControls\Servicios.ascx" />
     <Content Include="Formularios\UserControls\SobreNosotros.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -81,6 +100,20 @@
     </Compile>
     <Compile Include="Formularios\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UserControls\Diferentes.ascx.cs">
+      <DependentUpon>Diferentes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\UserControls\Diferentes.ascx.designer.cs">
+      <DependentUpon>Diferentes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UserControls\Servicios.ascx.cs">
+      <DependentUpon>Servicios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\UserControls\Servicios.ascx.designer.cs">
+      <DependentUpon>Servicios.ascx</DependentUpon>
     </Compile>
     <Compile Include="Formularios\UserControls\SobreNosotros.ascx.cs">
       <DependentUpon>SobreNosotros.ascx</DependentUpon>

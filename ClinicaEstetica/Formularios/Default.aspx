@@ -1,4 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ClinicaEstetica.Default" %>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -77,6 +80,166 @@
         .servicios h2 { font-size:2.5rem; margin-bottom:16px; }
         .servicios p { font-size:1.2rem; line-height:1.7; margin-bottom:24px; }
 
+        /* =========================
+   QUÉ NOS HACE DIFERENTES
+========================= */
+.diferentes {
+    background: linear-gradient(135deg, #ffffff 80%);
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-dark);
+}
+
+
+
+.diferentes-container {
+    max-width:1200px;
+    margin:0 auto;
+    padding:40px 20px;
+}
+
+.diferentes h1 {
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.diferentes h2 {
+    font-size:1.4rem;
+    font-weight:normal;
+    margin-bottom:30px;
+}
+
+.diferentes .intro {
+    max-width:800px;
+    margin:0 auto 50px auto;
+    font-size:1rem;
+    line-height:1.6;
+}
+
+.fila-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.caracteristica {
+    flex: 0 1 30%;  /* fuerza 3 por fila */
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.caracteristica i,
+.caracteristica img {
+    display: block;
+    width: 50px !important;   /* tamaño de icono */
+    height: 50px !important;
+    margin: 0 auto 10px;
+    object-fit: contain;       /* mantiene proporción */
+    font-size: 2.5rem;         /* opcional, si usas <i> */
+}
+
+.caracteristica strong {
+    display:block;
+    font-size:1.1rem;
+    margin-bottom:8px;
+}
+
+.caracteristica p {
+    font-size:0.95rem;
+    line-height:1.5;
+    margin:0;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    .caracteristicas-fila {
+        flex-direction:column;
+        align-items:center;
+    }
+    .caracteristica {
+        max-width:90%;
+    }
+}
+
+
+/* SERVICIOSS */
+.servicios {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff; /* Fondo blanco predominante */
+    color: #12202a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicios h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3em;
+    font-weight: 900; /* Segoe UI Black */
+}
+
+.servicios h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    font-weight: 700; /* Segoe UI Bold */
+}
+
+.servicios .intro {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Siempre 3 columnas en escritorio */
+    gap: 40px;
+    justify-items: center;
+    align-items: start;
+}
+
+.servicio {
+    padding: 20px;
+    text-align: center;
+}
+
+.servicio img {
+    width: 150px;  /* Tamaño más grande para destacar */
+    height: 150px;
+    object-fit: cover; /* Mantiene proporción de la imagen */
+    margin-bottom: 15px;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.servicio strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 900; /* Segoe UI Black */
+}
+
+/* Responsive */
+@media (max-width:992px) {
+    .grid-servicios {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+    }
+}
+
+@media (max-width:768px) {
+    .grid-servicios {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+}
+
+
         @media (max-width:980px){
             .hero{flex-direction:column; gap:36px;}
             .hero .left{text-align:center; align-items:center;}
@@ -122,6 +285,8 @@
             <asp:LinkButton ID="lnkConoce" runat="server" CssClass="btn-secondary" OnClientClick="return false;">Conoce más</asp:LinkButton>
         </div>
 
+
+
         <!-- 🟢 Aquí agregamos el Label para mostrar mensajes -->
         <asp:Label ID="lblDoctor" runat="server" Text="" Visible="false" CssClass="mensaje-doctor"></asp:Label>
     </div>
@@ -151,11 +316,109 @@
             </div>
         </section>
 
-        <!-- SERVICIOS -->
-        <section id="servicios" class="servicios">
-            <h2>Servicios</h2>
-            <p>Aquí irán los servicios de la clínica...</p>
-        </section>
+     
+
+       <!-- SECCIÓN: QUÉ NOS HACE DIFERENTES -->
+<section class="diferentes">
+    <div class="diferentes-container">
+        <h1>Qué nos hace Diferentes</h1>
+        <h2>Nuestra excelencia se refleja en cada detalle</h2>
+        <p class="intro">
+            En Medical Spa Nicaragua, cada aspecto de nuestro servicio ha sido diseñado para brindarte bienestar, confianza y resultados visibles. 
+            Nos destacamos por nuestra dedicación, profesionalismo y atención humana en cada tratamiento.
+        </p>
+
+        <!-- Fila 1 -->
+        <div class="fila-caracteristicas">
+            <div class="caracteristica">
+                <img src="Imagenes/puntualidad.png" alt="Puntualidad" />
+                <strong>Puntualidad</strong>
+                <p>Respetamos tu tiempo con un servicio eficiente y bien organizado.</p>
+            </div>
+            <div class="caracteristica">
+                <img src="Imagenes/higiene.png" alt="Higiene" />
+                <strong>Higiene</strong>
+                <p>Mantenemos estrictos estándares de limpieza en todas nuestras áreas y equipos.</p>
+            </div>
+            <div class="caracteristica">
+                <img src="Imagenes/candles.png" alt="Ambientación" />
+                <strong>Ambientación</strong>
+                <p>Un entorno relajante que promueve la calma, el confort y la renovación.</p>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="fila-caracteristicas">
+            <div class="caracteristica">
+                <img src="Imagenes/especialista.png" alt="Especialistas" />
+                <strong>Especialistas</strong>
+                <p>Contamos con un equipo médico altamente capacitado y con amplia experiencia.</p>
+            </div>
+            <div class="caracteristica">
+                <img src="Imagenes/atencion.png" alt="Atención Personalizada" />
+                <strong>Atención Personalizada</strong>
+                <p>Diseñamos tratamientos adaptados a tus necesidades y objetivos específicos.</p>
+            </div>
+            <div class="caracteristica">
+                <img src="Imagenes/tecnologia.png" alt="Tecnología Avanzada" />
+                <strong>Tecnología Avanzada</strong>
+                <p>Utilizamos equipos modernos para garantizar resultados seguros y efectivos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="servicios">
+    <div class="servicios-container">
+        <h1>Servicios y Tratamientos</h1>
+        <h2>Que realzan tu belleza natural</h2>
+        <p class="intro">
+            Descubre nuestra amplia gama de tratamientos diseñados para tu cuidado, bienestar y resultados visibles.
+        </p>
+
+        <div class="grid-servicios">
+            <div class="servicio">
+                <img src="Imagenes/consulta.jpg" alt="Consulta Dermatológica" />
+                <strong>Consulta Dermatológica</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/limpieza_facial.jpg" alt="Limpieza Facial" />
+                <strong>Limpieza Facial</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/dermapen.png" alt="Dermapen" />
+                <strong>Dermapen</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/peeling_quimico.jpg" alt="Peeling Químico" />
+                <strong>Peeling Químico</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/rellenos_faciales.jpg" alt="Rellenos Faciales" />
+                <strong>Rellenos Faciales</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/lipo_enzimas.png" alt="Lipo Enzimas" />
+                <strong>Lipo Enzimas</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/restauramos_cabello.png" alt="Restauramos Cabello" />
+                <strong>Restauramos Cabello</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/revitalizamos_piel.png" alt="Revitalizamos tu Piel" />
+                <strong>Revitalizamos tu Piel</strong>
+            </div>
+            <div class="servicio">
+                <img src="Imagenes/laseres.png" alt="Laseres" />
+                <strong>Laseres</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
 
     </form>
 

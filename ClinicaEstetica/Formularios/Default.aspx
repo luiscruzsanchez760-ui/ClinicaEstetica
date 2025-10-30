@@ -1243,7 +1243,7 @@
                 </div>
                 <nav class="main-nav">
                     <asp:HyperLink ID="lnkCatalogo" runat="server" CssClass="menu-link" NavigateUrl="#catalogo">Catálogo</asp:HyperLink>
-                    <asp:HyperLink ID="lnkInicio" runat="server" CssClass="menu-link" NavigateUrl="#hero">Inicio</asp:HyperLink>
+                   <asp:HyperLink ID="lnkInicio" runat="server" CssClass="menu-link" NavigateUrl="#hero">Inicio</asp:HyperLink>
                     <asp:HyperLink ID="lnkServicios" runat="server" CssClass="menu-link" NavigateUrl="#servicios">Servicios</asp:HyperLink>
                     <asp:HyperLink ID="lnkEquipos" runat="server" CssClass="menu-link" NavigateUrl="#equipos">Equipos</asp:HyperLink>
                     <asp:HyperLink ID="lnkMisionVision" runat="server" CssClass="menu-link" NavigateUrl="#mision-vision">Misión y Visión</asp:HyperLink>
@@ -1261,8 +1261,7 @@
             En <strong>Clínica Médica y Estética</strong> encontrarás un entorno profesional que te ofrece un destino acogedor para tu bienestar físico y mental.
         </p>
         <div class="hero-ctas">
-            <asp:Button ID="btnSolicitar" runat="server" CssClass="btn-primary" Text="Solicitar cita" OnClick="btnSolicitar_Click" />
-            <asp:LinkButton ID="lnkConoce" runat="server" CssClass="btn-secondary" OnClientClick="return false;">Conoce más</asp:LinkButton>
+           
         </div>
 
         <!-- 🟢 Aquí agregamos el Label para mostrar mensajes -->
@@ -1286,9 +1285,7 @@
                         En <strong>Clínica Médica y Estética</strong> nos dedicamos a brindar un entorno profesional
                         que combina tecnología avanzada y un equipo altamente calificado para cuidar tu salud y belleza.
                     </p>
-                    <asp:Button ID="btnServicios" runat="server" CssClass="btn-primary"
-                        OnClientClick="document.querySelector('#servicios').scrollIntoView({ behavior: 'smooth' }); return false;"
-                        Text="Servicios" />
+                 
                 </div>
             </div>
         </section>
@@ -1343,6 +1340,8 @@
     </div>
 </section>
 
+
+ <!-- SERVICIOS Y TRATAMIENTOS-->
 <section class="servicios">
     <div class="servicios-container">
         <h1 class="fade-in">Servicios y Tratamientos</h1>
@@ -1356,72 +1355,81 @@
                 <img src="Imagenes/consulta.jpg" alt="Consulta Dermatológica" />
                 <strong>Consulta Dermatológica</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20una%20consulta%20dermatol%C3%B3gica', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('consulta')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20una%20consulta%20dermatol%C3%B3gica', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('consulta'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/limpieza_facial.jpg" alt="Limpieza Facial" />
                 <strong>Limpieza Facial</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20una%20limpieza%20facial', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('limpieza')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20una%20limpieza%20facial', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('limpieza'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/dermapen.png" alt="Dermapen" />
                 <strong>Dermapen</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20un%20tratamiento%20con%20Dermapen', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('dermapen')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20un%20tratamiento%20con%20Dermapen', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('dermapen'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/peeling_quimico.jpg" alt="Peeling Químico" />
                 <strong>Peeling Químico</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20un%20peeling%20qu%C3%ADmico', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('peeling')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20un%20peeling%20qu%C3%ADmico', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('peeling'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/rellenos_faciales.jpg" alt="Rellenos Faciales" />
                 <strong>Rellenos Faciales</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20rellenos%20faciales', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('rellenos')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20rellenos%20faciales', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('acido'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/lipo_enzimas.png" alt="Lipo Enzimas" />
                 <strong>Lipo Enzimas</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20lipoenzimas', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('lipo')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20lipoenzimas', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('lipo'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/restauramos_cabello.png" alt="Restauramos Cabello" />
                 <strong>Restauramos Cabello</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20para%20restaurar%20mi%20cabello', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('cabello')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20para%20restaurar%20mi%20cabello', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('cabello'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/revitalizamos_piel.png" alt="Revitalizamos tu Piel" />
                 <strong>Revitalizamos tu Piel</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20revitalizar%20mi%20piel', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('revitalizar')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20revitalizar%20mi%20piel', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('revitalizar'); return false;">Leer más</button>
                 </div>
             </div>
             <div class="servicio fade-in">
                 <img src="Imagenes/laseres.png" alt="Laseres" />
                 <strong>Laseres</strong>
                 <div class="servicio-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamientos%20con%20l%C3%A1ser', '_blank')">WhatsApp</button>
-                    <button class="btn-servicio btn-more" onclick="showTratamiento('laser')">Leer más</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamientos%20con%20l%C3%A1ser', '_blank')">Estoy Interesado</button>
+                    <!-- CAMBIO AQUÍ -->
+                    <button type="button" class="btn-servicio btn-more" onclick="showTratamiento('laser'); return false;">Leer más</button>
                 </div>
             </div>
         </div>
@@ -1540,7 +1548,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20una%20consulta%20dermatol%C3%B3gica', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20una%20consulta%20dermatol%C3%B3gica', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1584,7 +1592,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20una%20limpieza%20facial', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20una%20limpieza%20facial', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1628,7 +1636,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20microdermoabrasi%C3%B3n', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20microdermoabrasi%C3%B3n', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1672,7 +1680,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20un%20tratamiento%20Hydrafacial', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20un%20tratamiento%20Hydrafacial', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1716,7 +1724,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20un%20tratamiento%20con%20Dermapen', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20un%20tratamiento%20con%20Dermapen', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1760,7 +1768,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20un%20peeling%20qu%C3%ADmico', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20un%20peeling%20qu%C3%ADmico', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1804,7 +1812,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20toxina%20botul%C3%ADnica', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20toxina%20botul%C3%ADnica', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1848,7 +1856,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20%C3%A1cido%20hialur%C3%B3nico', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20%C3%A1cido%20hialur%C3%B3nico', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1892,7 +1900,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20para%20restaurar%20mi%20cabello', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20para%20restaurar%20mi%20cabello', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1936,7 +1944,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20mesoterapia%20capilar', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20mesoterapia%20capilar', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -1980,7 +1988,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20lipoenzimas', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamiento%20con%20lipoenzimas', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -2024,7 +2032,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20tratamientos%20con%20l%C3%A1ser%20IPL%20y%20Nd-YAG', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20tratamientos%20con%20l%C3%A1ser%20IPL%20y%20Nd-YAG', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -2068,7 +2076,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20revitalizar%20mi%20piel', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20revitalizar%20mi%20piel', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -2112,7 +2120,7 @@
                     </div>
                 </div>
                 <div class="tratamiento-actions">
-                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20bioestimuladores%20de%20col%C3%A1geno', '_blank')">Consultar por WhatsApp</button>
+                    <button class="btn-servicio btn-whatsapp" onclick="window.open('https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20bioestimuladores%20de%20col%C3%A1geno', '_blank')">Consultar por WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -2132,12 +2140,14 @@
             <div class="mision-vision-card fade-in">
                 <h3>Misión</h3>
                 <p>
-Nuestra misión es ofrecer un enfoque médico y estético integral, combinando los últimos avances en tecnología y tratamientos con un servicio de integridad, humano y personalizado. A través de un equipo de profesionales, éticos y altamente capacitados, buscamos proporcionar soluciones de salud y estética adaptadas a las necesidades individuales de cada paciente. Nos esforzamos por garantizar resultados que mejoren tanto la apariencia física como el bienestar general, siempre con un compromiso de altos valores morales y espirituales inquebrantable con la calidad, la seguridad y la satisfacción del paciente                </p>
+                    Brindar servicios médicos estéticos de excelencia, combinando tecnología avanzada, tratamientos innovadores y un equipo de profesionales altamente calificados para realzar la belleza natural de cada paciente, garantizando resultados seguros y satisfactorios en un ambiente de confianza y bienestar.
+                </p>
             </div>
             <div class="mision-vision-card vision fade-in">
                 <h3>Visión</h3>
                 <p>
-La visión de la Clínica Médica y Estética del Dr. Jorge Ibarra es ser un referente en el cuidado integral de la salud y la belleza, proporcionando servicios de medicina general y dermatologia estética de la más alta calidad Nos comprometemos a ayudar a nuestros pacientes a mejorar su calidad de vida y la salud de su piel, brindando tratamientos personalizados, seguros y efectivos que promuevan el bienestar fisico y emocional. Nuestro objetivo es que cada persona que confie en nuestros servicios se sienta más feliz, segura y saludable, logrando resultados visibles que potencien su confianza y bienestar                </p>
+                    Convertirnos en la clínica de referencia en medicina estética de Nicaragua, reconocida por nuestra excelencia profesional, tecnología de vanguardia y resultados excepcionales, transformando vidas a través de tratamientos personalizados que superen las expectativas de nuestros pacientes.
+                </p>
             </div>
         </div>
     </div>
@@ -2156,14 +2166,14 @@ La visión de la Clínica Médica y Estética del Dr. Jorge Ibarra es ser un ref
             <div class="social-card fade-in">
                 <div class="social-icon instagram">
                     <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948.073zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
                     </svg>
                 </div>
                 <h3>Instagram</h3>
                 <p>Descubre nuestros tratamientos, casos de éxito y consejos de belleza</p>
                 <a href="https://www.instagram.com/dr.jorgeibarraclinica/" target="_blank" class="social-link instagram">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
                     </svg>
                     Seguir en Instagram
                 </a>
@@ -2197,19 +2207,19 @@ La visión de la Clínica Médica y Estética del Dr. Jorge Ibarra es ser un ref
         </p>
 
         <div class="whatsapp-container fade-in">
-            <a href="https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20los%20tratamientos%20de%20la%20cl%C3%ADnica" class="whatsapp-button" target="_blank">
+            <a href="https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20los%20tratamientos%20de%20la%20cl%C3%ADnica" class="whatsapp-button" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
                 Chatear por WhatsApp
             </a>
             
             <div class="whatsapp-qr">
                 <!-- Aquí puedes agregar un código QR que redirija a tu WhatsApp -->
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/50512345678?text=Hola%2C%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20los%20tratamientos%20de%20la%20cl%C3%ADnica" alt="Código QR WhatsApp">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/50584888868?text=Hola%2C%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20los%20tratamientos%20de%20la%20cl%C3%ADnica" alt="Código QR WhatsApp">
             </div>
         </div>
 
         <div class="contact-info fade-in">
-            <p><strong>Teléfono:</strong> +505 8488 8862</p>
+            <p><strong>Teléfono:</strong> +505 8488 8868</p>
             <p><strong>Horario de atención:</strong> Lunes a Viernes de 9:00 AM a 6:00 PM</p>
             <p><strong>Ubicación:</strong> Managua, Nicaragua</p>
         </div>
@@ -2220,7 +2230,7 @@ La visión de la Clínica Médica y Estética del Dr. Jorge Ibarra es ser un ref
 <section id="agendar-cita" class="agendar-cita">
     <div class="agendar-cita-container">
         <h1 class="fade-in">Agendar cita</h1>
-        <h2 class="fade-in">Estás a un paso de agendar tu cita en nuestra clinica con las mejores promociones</h2>
+        <h2 class="fade-in">Estás a un paso de agendar tu cita en nuestro SPA con las mejores promociones</h2>
         <p class="intro fade-in">
             Solo debes presionar el siguiente botón para iniciar tu transformación hacia una versión más radiante y segura de ti misma.
         </p>
@@ -2229,11 +2239,11 @@ La visión de la Clínica Médica y Estética del Dr. Jorge Ibarra es ser un ref
             <div class="promo-content">
                 <h3 class="promo-title">🌟 ¡Promociones Exclusivas por Tiempo Limitado! 🌟</h3>
                 <p class="promo-description">
-                    Agenda tu cita hoy y obtén un <strong> descuento</strong> en tu primer tratamiento. 
-                    Además, recibe una <strong>atencion de calidad</strong> en tu visita a nuestra clinica.
+                    Agenda tu cita hoy y obtén un <strong>20% de descuento</strong> en tu primer tratamiento. 
+                    Además, recibe una <strong>consulta dermatológica gratuita</strong> con la compra de cualquier paquete de servicios.
                 </p>
                 
-                <a href="https://wa.me/50512345678?text=Hola%2C%20deseo%20agendar%20una%20cita%20y%20conocer%20las%20promociones%20disponibles" class="whatsapp-cita-button" target="_blank">
+                <a href="https://wa.me/50584888868?text=Hola%2C%20deseo%20agendar%20una%20cita%20y%20conocer%20las%20promociones%20disponibles" class="whatsapp-cita-button" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-cita-icon">
                     Agendar cita por WhatsApp
                 </a>

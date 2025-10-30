@@ -22,7 +22,7 @@ namespace ClinicaEstetica
 
         protected void btnSolicitar_Click(object sender, EventArgs e)
         {
-            lblDoctor.Text = "Solicitud de cita enviada (ejemplo).";
+            lblDoctor.Text = "";
             lblDoctor.Visible = true;
         }
     }

@@ -87,24 +87,6 @@ namespace ClinicaEstetica
         protected global::System.Web.UI.WebControls.HyperLink lnkAgendar;
 
         /// <summary>
-        /// Control btnSolicitar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSolicitar;
-
-        /// <summary>
-        /// Control lnkConoce.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkConoce;
-
-        /// <summary>
         /// Control lblDoctor.
         /// </summary>
         /// <remarks>
@@ -112,14 +94,5 @@ namespace ClinicaEstetica
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDoctor;
-
-        /// <summary>
-        /// Control btnServicios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnServicios;
     }
 }

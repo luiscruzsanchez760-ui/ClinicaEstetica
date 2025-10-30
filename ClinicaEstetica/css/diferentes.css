@@ -1,0 +1,51 @@
+﻿.diferentes {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #c5c4c5, #459dbf, #9bb8cb);
+    text-align: center;
+    color: #12202a;
+}
+
+.diferentes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fila-caracteristicas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.caracteristica {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .caracteristica:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .caracteristica img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    .caracteristica strong {
+        display: block;
+        font-size: 1.2em;
+        color: #459dbf;
+        margin-bottom: 10px;
+    }
+
+.intro {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1em;
+}

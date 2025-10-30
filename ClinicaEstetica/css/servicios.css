@@ -1,0 +1,91 @@
+﻿/* =========================
+   SERVICIOS
+========================= */
+.servicios {
+    background: linear-gradient(135deg, #c5c4c5, #459dbf, #9bb8cb);
+    color: #12202a;
+    text-align: center;
+    padding: 100px 20px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicios h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.servicios h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.servicios .intro {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ==== Tarjetas de servicios ==== */
+.fila-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.servicio {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 320px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    .servicio:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .servicio img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    .servicio strong {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: #459dbf;
+        margin-bottom: 8px;
+    }
+
+    .servicio p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #333;
+    }
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    .fila-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        width: 90%;
+    }
+}

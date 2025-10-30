@@ -67,7 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\diferentes.css" />
+    <Content Include="css\servicios.css" />
+    <Content Include="css\sobrenosotros.css" />
     <Content Include="Formularios\Default.aspx" />
+    <Content Include="css\estilos.css" />
+    <Content Include="Formularios\Imagenes\acido_hialuronico.png" />
+    <Content Include="Formularios\Imagenes\bioestimuladores_colageno.jpg" />
+    <Content Include="Formularios\Imagenes\dermapen-a7.jpg" />
+    <Content Include="Formularios\Imagenes\diodo-laser.jpg" />
+    <Content Include="Formularios\Imagenes\hydrafacial.jpg" />
     <Content Include="Formularios\Imagenes\atencion.png" />
     <Content Include="Formularios\Imagenes\candles.png" />
     <Content Include="Formularios\Imagenes\consulta.jpg" />
@@ -77,16 +86,25 @@
     <Content Include="Formularios\Imagenes\estetica.png" />
     <Content Include="Formularios\Imagenes\fondo.png" />
     <Content Include="Formularios\Imagenes\higiene.png" />
+    <Content Include="Formularios\Imagenes\ipl.jpg" />
     <Content Include="Formularios\Imagenes\laseres.png" />
+    <Content Include="Formularios\Imagenes\laserr.jpg" />
     <Content Include="Formularios\Imagenes\limpieza_facial.jpg" />
+    <Content Include="Formularios\Imagenes\lipo_enzimas.jpg" />
     <Content Include="Formularios\Imagenes\lipo_enzimas.png" />
     <Content Include="Formularios\Imagenes\logo.png" />
+    <Content Include="Formularios\Imagenes\mesoterapia_capilar.jpg" />
+    <Content Include="Formularios\Imagenes\microdermoabrasion.jpg" />
+    <Content Include="Formularios\Imagenes\nd-yag.jpg" />
     <Content Include="Formularios\Imagenes\peeling_quimico.jpg" />
     <Content Include="Formularios\Imagenes\puntualidad.png" />
     <Content Include="Formularios\Imagenes\rellenos_faciales.jpg" />
+    <Content Include="Formularios\Imagenes\restauramos_cabello.jpg" />
     <Content Include="Formularios\Imagenes\restauramos_cabello.png" />
+    <Content Include="Formularios\Imagenes\revitalizamos_piel.jpg" />
     <Content Include="Formularios\Imagenes\revitalizamos_piel.png" />
     <Content Include="Formularios\Imagenes\tecnologia.png" />
+    <Content Include="Formularios\Imagenes\toxina_botulinica.jpg" />
     <Content Include="Formularios\laseres.png" />
     <Content Include="Formularios\UserControls\Diferentes.ascx" />
     <Content Include="Formularios\UserControls\Servicios.ascx" />

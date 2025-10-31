@@ -24,7 +24,7 @@
 
         a { text-decoration:none; color:inherit; }
 
-        /* FONDO PRINCIPAL - Más visible */
+        /* FONDO PRINCIPAL hola - Más visible */
         body {
             background: linear-gradient(135deg, #f8fafb 0%, #ffffff 50%, #f0f7fa 100%);
             position: relative;

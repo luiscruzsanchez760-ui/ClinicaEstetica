@@ -1243,8 +1243,8 @@
                 </div>
                 <nav class="main-nav">
                     <asp:HyperLink ID="lnkCatalogo" runat="server" CssClass="menu-link" NavigateUrl="#catalogo">Catálogo</asp:HyperLink>
-                   <asp:HyperLink ID="lnkInicio" runat="server" CssClass="menu-link" NavigateUrl="#hero">Inicio</asp:HyperLink>
-                    <asp:HyperLink ID="lnkServicios" runat="server" CssClass="menu-link" NavigateUrl="#servicios">Servicios</asp:HyperLink>
+                   <a href="#hero" class="menu-link">Inicio</a>
+                   <a href="#servicios" class="menu-link">Servicios</a>
                     <asp:HyperLink ID="lnkEquipos" runat="server" CssClass="menu-link" NavigateUrl="#equipos">Equipos</asp:HyperLink>
                     <asp:HyperLink ID="lnkMisionVision" runat="server" CssClass="menu-link" NavigateUrl="#mision-vision">Misión y Visión</asp:HyperLink>
                     <asp:HyperLink ID="lnkRedes" runat="server" CssClass="menu-link" NavigateUrl="#redes-sociales">Redes Sociales</asp:HyperLink>

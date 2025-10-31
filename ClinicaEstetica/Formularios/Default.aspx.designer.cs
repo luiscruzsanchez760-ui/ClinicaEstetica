@@ -33,24 +33,6 @@ namespace ClinicaEstetica
         protected global::System.Web.UI.WebControls.HyperLink lnkCatalogo;
 
         /// <summary>
-        /// Control lnkInicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkInicio;
-
-        /// <summary>
-        /// Control lnkServicios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkServicios;
-
-        /// <summary>
         /// Control lnkEquipos.
         /// </summary>
         /// <remarks>
